@@ -10,7 +10,8 @@ export default{
           pageSize:7,
           realname:"",
           telephone:""
-        }
+        },
+        customerId:1221650,
     },
     getters:{
         conuntCustomers(state){
