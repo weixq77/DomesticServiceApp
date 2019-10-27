@@ -7,7 +7,9 @@
 export default {
     name:'order',
     data() {
-      
+      return {
+          
+      }
     }
 }
 </script>
