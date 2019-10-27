@@ -1,7 +1,10 @@
 <template>
     <div class="login">
+         <van-nav-bar
+            title="登录页面"
+            />
         <div id="content">
-        <h3>家政服务平台</h3>
+        <h1>家政服务平台</h1>
         <van-cell-group>
             <van-field
                 required
@@ -22,7 +25,7 @@
             &nbsp;
             <van-button type="primary"  size="small">注册</van-button>
                 </div>
-       </div>
+            </div>
 </template>
 <script>
 export default {
@@ -38,11 +41,14 @@ export default {
          position: absolute;
          top: 50%;
          right: 50%;
-         margin-right: -150px;
-         margin-top: -150px;
+         margin-right: -165px;
+         margin-top: -170px;
          text-align: center; 
+         background-color: whitesmoke;
+         border-radius: 10px;
+         padding: 20px;
       }
-      h3{
+      h1{
           color: skyblue;
       }
 </style>
