@@ -16,7 +16,7 @@
                     icon="photo-o"
                     text="文字"
                 />
-                </van-grid>
+            </van-grid>
 
     </div>
 </template>

@@ -7,27 +7,36 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'manager',
     component: Manager,
-    children:[{
-         path:"home",
-         component: () => import('../pages/manager/Home.vue')        
-    },
-    {
-          path:"order",
-          component: () => import('../pages/manager/Order.vue')        
-    },
-    {
-          path:"user",
-          component: () => import('../pages/manager/User.vue')        
-    },
-  ]
+    redirect: '/home',
+    children: [
+      {
+        path: 'home',
+        component: () => import('@/pages/manager/Home.vue'),
+      },
+      {
+        path:"order",
+        component: () => import('../pages/manager/Order.vue')        
+      },
+      {
+        path:"user",
+        component: () => import('../pages/manager/User.vue')        
+      },
+      {
+        path:"product",
+        component: () => import('../pages/manager/Product.vue')        
+      },
+    ]
   },
   {
     path: '/login',
     name: 'login',
-
     component: () => import('../pages/Login.vue')
+  },
+  {
+    path: '/submitorder',
+    name: 'submitorder',
+    component: () => import('../pages/SubmitOrder.vue')
   }
 ]
 
