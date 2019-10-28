@@ -22,6 +22,11 @@
             :show-page-size="3" 
             force-ellipses
         /> -->
+        <van-submit-bar
+                :price="3050"
+                button-text="提交订单"
+                @submit="onSubmit"
+                />
     </div>
 </template>
 <script>
@@ -32,6 +37,11 @@ export default {
             activeName:'a',//记录当前选中标签页
             value: 1,
       }
+    },
+    methods:{
+        onSubmit(){
+            this.$router.push("/SubmitOrder")
+        }
     }
 }
 </script>

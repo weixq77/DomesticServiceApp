@@ -40,7 +40,6 @@ export default {
     },
     // 需要接受一个参数，这个参数就是categories
     refreshCategories(state,categories){
-      console.log('state->',state.categories);
       state.categories = categories;
     },
     // 模态框标题

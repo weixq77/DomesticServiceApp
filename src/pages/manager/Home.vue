@@ -76,7 +76,7 @@ export default {
             // 遍历点击获取值
             // 判断获取值
             // 对应跳转页面
-            alert("待完善。。。")
+            this.$router.push("/product")
         },
         openProduct(){
             // 遍历点击获取值
