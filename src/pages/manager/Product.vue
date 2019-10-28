@@ -1,9 +1,11 @@
 <template>
     <div id="product">
-       <van-nav-bar title="商品分类" />
+       <van-nav-bar title="商品分类" 
+            left-arrow
+            @click-left="onClickLeft" />
        <div id="left-nav">
         <van-sidebar v-model="activeName">
-            <van-sidebar-item title="大衣" name="a" >
+            <van-sidebar-item title="大衣"  >
                
             </van-sidebar-item>
             <van-sidebar-item title="大衣外套" ></van-sidebar-item>
@@ -92,13 +94,16 @@ export default {
     name:'product',
     data() {
       return {
-            activeName:'a',//记录当前选中标签页
+            activeName:'0',//记录当前选中标签页
             value: 1,
       }
     },
     methods:{
         onSubmit(){
             this.$router.push("/SubmitOrder")
+        },
+        onClickLeft(){
+             this.$router.push("/home")
         }
     }
 }
