@@ -68,7 +68,7 @@
                         thumb="https://img.yzcdn.cn/vant/t-thirt.jpg">
                         <div slot="bottom" style="margin-top:5px;">
                             <van-row>
-                                <van-col span="8"> {{item.status}}</van-col>
+                                <van-col span="8" id="status"> {{item.status}}</van-col>
                                 <van-col span="5"></van-col>
                                 <van-col span="11" style="text-align: right;">{{timestampToTime(item.orderTime)}}</van-col>
                             </van-row>
@@ -93,7 +93,7 @@
                         thumb="https://img.yzcdn.cn/vant/t-thirt.jpg">
                         <div slot="bottom" style="margin-top:5px;">
                             <van-row>
-                                <van-col span="8"> {{item.status}}</van-col>
+                                <van-col span="8" id="status"> {{item.status}}</van-col>
                                 <van-col span="5"></van-col>
                                 <van-col span="11" style="text-align: right;">{{timestampToTime(item.orderTime)}}</van-col>
                             </van-row>
@@ -165,5 +165,9 @@ export default {
 .orderTab{
     height: 50px;
     
+}
+#status{
+    color: orangered;
+    font-weight: bold;
 }
 </style>

@@ -73,7 +73,7 @@ export default {
         },
         onSubmit(){
             alert("提交成功");
-             this.$router.push("/home")
+             this.$router.push("/order")
 
         },
         showPopup() {
