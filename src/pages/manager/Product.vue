@@ -28,7 +28,17 @@
                 :desc="item.description"  
                 :title="item.name"
                 :thumb="item.photo">
-            <van-stepper v-model="value"></van-stepper>
+                <!-- <van-stepper v-model="value"></van-stepper> -->
+                <div slot="bottom">
+                     <van-row>
+                        <van-row>
+                            <van-col span="10"><van-button size="mini" style="width:30px"><span class="b-size"> - </span></van-button></van-col>
+                            <van-col span="4"><span class="b-size"> 0 </span></van-col>
+                            <van-col span="10"><van-button size="mini" style="width:30px"><span class="b-size"> + </span></van-button></van-col>
+                        </van-row>
+                     </van-row>
+                    
+                </div>
             </van-card>
             <!-- <van-card
                 num="1"
@@ -127,5 +137,9 @@ export default {
 }
 #left-nav{
     position: absolute;
+}
+.b-size{
+    font-size: 16px;
+    text-align: center;
 }
 </style>
